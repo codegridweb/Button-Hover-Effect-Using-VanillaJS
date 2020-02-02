@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.cursor,
+.follow {
+    position: absolute;
+    pointer-events: none;
+    width: 0.4rem;
+    height: 0.4rem;
+    transform: translate(-50%, -50%);
+}
+
+.cursor {
+    background-color: white;
+    border-radius: 100%;
+}
+
+.follow {
+    padding: 2rem;
+    border: 0.1rem solid white;
+    transition: all 0.2s ease-out;
+    border-radius: 100%;
+}
+
+.follow.on-focus {
+    transform: translate(-0.55rem, -0.55rem);
+    border: 0.1rem solid white;
+    border-radius: 0%;
+    padding: 0.46rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 4rem;
+    color: white;
+    cursor: pointer;
+    font-family: "Monument Extended";
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: grey;
+}
+
+.button:hover {
+    color: white;
+}
